@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1743702542 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab09\prj\testdriver\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<iomanip>
+	<windows.h>
+	"ModulesBezkrovna.h"
+
+1743702263 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab08\prj\modulesbezkrovna.h
+	<string>
+
