@@ -3,3 +3,13 @@
 	<cmath>
 	<iostream>
 
+1743693761 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab08\prj\modulesbezkrovna\main.cpp
+	<cmath>
+	<iostream>
+	<iomanip>
+	<bitset>
+	<string>
+	<sstream>
+	<locale>
+	<windows.h>
+
