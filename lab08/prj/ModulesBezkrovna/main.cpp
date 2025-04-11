@@ -19,7 +19,7 @@ float s_calculation (float x, float y)
 {
     if ((pow(y,x) - M_PI) < 0)
     {
-        cout << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°: Ð²Ð¸Ñ€Ð°Ð· Ð¿Ñ–Ð´ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð½Ð¸Ð¼ ÐºÐ¾Ñ€ÐµÐ½ÐµÐ¼ Ð²Ñ–Ð´'Ñ”Ð¼Ð½Ð¸Ð¹" << endl;
+        cout << "Ïîìèëêà: âèðàç ï³ä êâàäðàòíèì êîðåíåì â³ä'ºìíèé" << endl;
     }
     float S = pow(x,2) - pow(y, 3) + sqrt(pow(y,x) - M_PI);
 
@@ -32,35 +32,35 @@ string ECTS_rating (int rating)
     SetConsoleOutputCP(CP_UTF8);
     if (rating<1 || rating>100)
     {
-        return "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°...";
+        return "Ïîìèëêà...";
     }
     if (rating>=1 && rating<=34)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: FX, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð· Ð¾Ð±Ð¾Ð²'ÑÐ·ÐºÐ¾Ð²Ð¸Ð¼ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¸Ð¼ ÐºÑƒÑ€ÑÐ¾Ð¼.";
+        return "Îö³íêà: FX, Ïîÿñíåííÿ: ç îáîâ'ÿçêîâèì ïîâòîðíèì êóðñîì.";
     }
     if (rating>=35 && rating<=59)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: F, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð· Ð¼Ð¾Ð¶Ð»Ð¸Ð²Ñ–ÑÑ‚ÑŽ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð³Ð¾ ÑÐºÐ»Ð°Ð´Ð°Ð½Ð½Ñ.";
+        return "Îö³íêà: F, Ïîÿñíåííÿ: ç ìîæëèâ³ñòþ ïîâòîðíîãî ñêëàäàííÿ.";
     }
     if (rating>=60 && rating<=66)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: E, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð²Ñ–Ð´Ð¿Ð¾Ð²Ñ–Ð´Ð°Ñ” Ð¼Ñ–Ð½Ñ–Ð¼Ð°Ð»ÑŒÐ½Ð¸Ð¼ ÐºÑ€Ð¸Ñ‚ÐµÑ€Ñ–ÑÐ¼.";
+        return "Îö³íêà: E, Ïîÿñíåííÿ: â³äïîâ³äàº ì³í³ìàëüíèì êðèòåð³ÿì.";
     }
     if (rating>=67 && rating<=74)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: D, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð½ÐµÐ¿Ð¾Ð³Ð°Ð½Ð¾, Ð°Ð»Ðµ Ð·Ñ– Ð·Ð½Ð°Ñ‡Ð½Ð¾ÑŽ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŽ Ð½ÐµÐ´Ð¾Ð»Ñ–ÐºÑ–Ð².";
+        return "Îö³íêà: D, Ïîÿñíåííÿ: íåïîãàíî, àëå ç³ çíà÷íîþ ê³ëüê³ñòþ íåäîë³ê³â.";
     }
     if (rating>=75 && rating<=81)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: C, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð·Ð°Ð³Ð°Ð»Ð¾Ð¼ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ðµ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ñ–Ð· Ð¿ÐµÐ²Ð½Ð¾ÑŽ Ð·Ð½Ð°Ñ‡Ð½Ð¾ÑŽ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŽ Ð¿Ð¾Ð¼Ð¸Ð»Ð¾Ðº.";
+        return "Îö³íêà: C, Ïîÿñíåííÿ: çàãàëîì ïðàâèëüíå âèêîíàííÿ ³ç ïåâíîþ çíà÷íîþ ê³ëüê³ñòþ ïîìèëîê.";
     }
     if (rating>=82 && rating<=89)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: B, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð²Ð¸Ñ‰Ðµ ÑÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ð³Ð¾, Ð´ÐµÑÐºÑ– Ð¿Ð¾Ð¼Ð¸Ð»ÐºÐ¸.";
+        return "Îö³íêà: B, Ïîÿñíåííÿ: âèùå ñåðåäíüîãî, äåÿê³ ïîìèëêè.";
     }
     if (rating>=90 && rating<=100)
     {
-        return "ÐžÑ†Ñ–Ð½ÐºÐ°: A, ÐŸÐ¾ÑÑÐ½ÐµÐ½Ð½Ñ: Ð²Ñ–Ð´Ð¼Ñ–Ð½Ð½Ðµ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð· Ð½ÐµÐ·Ð½Ð°Ñ‡Ð½Ð¾ÑŽ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŽ Ð¿Ð¾Ð¼Ð¸Ð»Ð¾Ðº.";
+        return "Îö³íêà: A, Ïîÿñíåííÿ: â³äì³ííå âèêîíàííÿ ç íåçíà÷íîþ ê³ëüê³ñòþ ïîìèëîê.";
     }
 }
 
@@ -74,7 +74,7 @@ string week_temperature(float mon, float tue, float wed, float thu, float fri, f
 {
     week_celsius = (mon+tue+wed+thu+fri+sat+sun)/7;
     week_fahrenheit = 32+((9.0/5)*week_celsius);
-    string result = "Ð¡ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ñ‚Ð¸Ð¶Ð½ÐµÐ²Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð·Ð° Ð¦ÐµÐ»ÑŒÑÑ–Ñ”Ð¼: " + format_float(week_celsius) + "\nÐ¡ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ñ‚Ð¸Ð¶Ð½ÐµÐ²Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð·Ð° Ð¤Ð°Ñ€ÐµÐ½Ð³ÐµÐ¹Ñ‚Ð¾Ð¼: " + format_float(week_fahrenheit);
+    string result = "Ñåðåäíüîòèæíåâà òåìïåðàòóðà çà Öåëüñ³ºì: " + format_float(week_celsius) + "\nÑåðåäíüîòèæíåâà òåìïåðàòóðà çà Ôàðåíãåéòîì: " + format_float(week_fahrenheit);
     return result;
 }
 
@@ -107,29 +107,29 @@ int input_analysis(string file_input, string file_output)
     ofstream output(file_output);
     if (!output)
 	{
-		cerr << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°, Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸Ð¹ Ð´Ð»Ñ Ð¿Ð¸ÑÑŒÐ¼Ð°!" << endl;
+		cerr << "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ïèñüìà!" << endl;
 		exit(1);
 	}
     ifstream input(file_input);
     if (!input)
 	{
-		cerr << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°, Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸Ð¹ Ð´Ð»Ñ Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ñ!" << endl;
+		cerr << "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ÷èòàííÿ!" << endl;
 		exit(1);
 	}
-    output << "Ð‘ÐµÐ·ÐºÑ€Ð¾Ð²Ð½Ð° Ð’ÐµÑ€Ð¾Ð½Ñ–ÐºÐ°" << endl;
-    output << "Ð¦ÐÐ¢Ð£" << endl;
-    output << "ÐšÑ€Ð¾Ð¿Ð¸Ð²Ð½Ð¸Ñ†ÑŒÐºÐ¸Ð¹" << endl;
-    output << "Ð£ÐºÑ€Ð°Ñ—Ð½Ð°" << endl;
-    output << "2025 Ñ€Ñ–Ðº" << endl;
+    output << "Áåçêðîâíà Âåðîí³êà" << endl;
+    output << "ÖÍÒÓ" << endl;
+    output << "Êðîïèâíèöüêèé" << endl;
+    output << "Óêðà¿íà" << endl;
+    output << "2025 ð³ê" << endl;
     string text;
-    string poem = "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾, "
-                  "Ð’ÑÑ–Ð¼, Ñ…Ñ‚Ð¾ Ð¿ÐµÑ€ÐµÑÑ‚ÑƒÐ¿Ð¸Ñ‚ÑŒ Ð’Ð°Ñˆ Ð¿Ð¾Ñ€Ñ–Ð³: "
-                  "Ð”Ð¾Ð±Ñ€Ð¸Ð¼ Ð»ÑŽÐ´ÑÐ¼, Ñ– Ð¿Ñ‚Ð°Ñ…Ð°Ð¼ Ñ‚Ð°Ðº ÑÐ°Ð¼Ð¾, "
-                  "Ð† ÐºÐ¾Ñ‚Ð¾Ð²Ñ–, Ñ‰Ð¾ Ð² Ñ‚ÐµÐ¿Ð»Ñ– Ð¿Ñ€Ð¸Ð»Ñ–Ð³; "
-                  "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¶Ð½ÐµÐ½ÑŒÐºÑ–Ð¹ Ð´ÐµÑ€ÐµÐ²Ð¸Ð½Ñ–, "
-                  "Ð©Ð¾ Ð´Ð¾ Ñ…Ð°Ñ‚Ð¸ Ð²Ñ–Ñ‚Ð¸ Ð¿Ñ€Ð¸Ñ‚ÑƒÐ»Ñ, "
-                  "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°Ð»ÐµÑÐµÐ½ÑŒÐºÑ–Ð¹ Ñ‚Ñ€Ð°Ð²Ð¸Ð½Ñ– "
-                  "Ð™ Ð²Ñ–Ñ‚ÐµÑ€Ñ†ÑŽ, Ñ‰Ð¾ Ð¿Ñ€Ð¸Ð»Ñ–Ñ‚Ð° Ð·Ð´Ð°Ð»Ñ. ";
+    string poem = "Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî, "
+                  "Âñ³ì, õòî ïåðåñòóïèòü Âàø ïîð³ã: "
+                  "Äîáðèì ëþäÿì, ³ ïòàõàì òàê ñàìî, "
+                  "² êîòîâ³, ùî â òåïë³ ïðèë³ã; "
+                  "Õàé ùàñòèòü êîæíåíüê³é äåðåâèí³, "
+                  "Ùî äî õàòè â³òè ïðèòóëÿ, "
+                  "Õàé ùàñòèòü ìàëåñåíüê³é òðàâèí³ "
+                  "É â³òåðöþ, ùî ïðèë³òà çäàëÿ. ";
     vector<string> words;
     string word;
     bool found = false;
@@ -156,25 +156,25 @@ int input_analysis(string file_input, string file_output)
     input.close();
     if (text.length() == 1 && ispunct(text[0]))
     {
-        output << "\nÐ£ Ñ„Ð°Ð¹Ð»Ñ– Ð·Ð½Ð°Ðº Ð¿ÑƒÐ½ÐºÑ‚ÑƒÐ°Ñ†Ñ–Ñ—" << endl;
+        output << "\nÓ ôàéë³ çíàê ïóíêòóàö³¿" << endl;
         output.close();
         ofstream input(file_input, ios::trunc);
         if (!input)
         {
-            cerr << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°, Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸Ð¹ Ð´Ð»Ñ Ð¿Ð¸ÑÑŒÐ¼Ð°!" << endl;
+            cerr << "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ïèñüìà!" << endl;
             exit(1);
         }
-        input << "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ!" << endl;
+        input << "Õàé ùàñòèòü!" << endl;
         input.close();
         return 0;
     }
     else if (is_word(text))
     {
-        output <<  "\nÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð»Ñ–Ñ‚ÐµÑ€ Ñƒ ÑÐ»Ð¾Ð²Ñ–: " << text.length()<< endl;
+        output <<  "\nÊ³ëüê³ñòü ë³òåð ó ñëîâ³: " << text.length()<< endl;
     }
     else
     {
-        output <<  "\nÐ›ÐµÐ¾Ð½Ñ–Ð´ ÐšÐ°Ð´ÐµÐ½ÑŽÐº" << endl;
+        output <<  "\nËåîí³ä Êàäåíþê" << endl;
         output.close();
         return 0;
     }
@@ -190,13 +190,13 @@ int input_analysis(string file_input, string file_output)
     }
     if (found)
     {
-        output <<  "\nÐ¡Ð»Ð¾Ð²Ð¾ Ð¼Ñ–ÑÑ‚Ð¸Ñ‚ÑŒÑÑ Ñƒ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ñ–Ð¹ Ñ‡Ð°ÑÑ‚Ð¸Ð½Ñ– Ð²Ñ–Ñ€ÑˆÐ° ÐÐ½Ð°Ñ‚Ð¾Ð»Ñ–Ñ Ð¢Ð°Ñ€Ð°Ð½Ð° \"Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾\":" << endl;
-        output <<  "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾,\nÐ’ÑÑ–Ð¼, Ñ…Ñ‚Ð¾ Ð¿ÐµÑ€ÐµÑÑ‚ÑƒÐ¿Ð¸Ñ‚ÑŒ Ð’Ð°Ñˆ Ð¿Ð¾Ñ€Ñ–Ð³:\nÐ”Ð¾Ð±Ñ€Ð¸Ð¼ Ð»ÑŽÐ´ÑÐ¼, Ñ– Ð¿Ñ‚Ð°Ñ…Ð°Ð¼ Ñ‚Ð°Ðº ÑÐ°Ð¼Ð¾,\nÐ† ÐºÐ¾Ñ‚Ð¾Ð²Ñ–, Ñ‰Ð¾ Ð² Ñ‚ÐµÐ¿Ð»Ñ– Ð¿Ñ€Ð¸Ð»Ñ–Ð³;\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¶Ð½ÐµÐ½ÑŒÐºÑ–Ð¹ Ð´ÐµÑ€ÐµÐ²Ð¸Ð½Ñ–,\nÐ©Ð¾ Ð´Ð¾ Ñ…Ð°Ñ‚Ð¸ Ð²Ñ–Ñ‚Ð¸ Ð¿Ñ€Ð¸Ñ‚ÑƒÐ»Ñ,\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°Ð»ÐµÑÐµÐ½ÑŒÐºÑ–Ð¹ Ñ‚Ñ€Ð°Ð²Ð¸Ð½Ñ–\nÐ™ Ð²Ñ–Ñ‚ÐµÑ€Ñ†ÑŽ, Ñ‰Ð¾ Ð¿Ñ€Ð¸Ð»Ñ–Ñ‚Ð° Ð·Ð´Ð°Ð»Ñ." << endl;
+        output <<  "\nÑëîâî ì³ñòèòüñÿ ó íàñòóïí³é ÷àñòèí³ â³ðøà Àíàòîë³ÿ Òàðàíà \"Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî\":" << endl;
+        output <<  "Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî,\nÂñ³ì, õòî ïåðåñòóïèòü Âàø ïîð³ã:\nÄîáðèì ëþäÿì, ³ ïòàõàì òàê ñàìî,\n² êîòîâ³, ùî â òåïë³ ïðèë³ã;\nÕàé ùàñòèòü êîæíåíüê³é äåðåâèí³,\nÙî äî õàòè â³òè ïðèòóëÿ,\nÕàé ùàñòèòü ìàëåñåíüê³é òðàâèí³\nÉ â³òåðöþ, ùî ïðèë³òà çäàëÿ." << endl;
     }
     else
     {
-        output <<  "\nÐ¡Ð»Ð¾Ð²Ð¾ ÐÐ• Ð¼Ñ–ÑÑ‚Ð¸Ñ‚ÑŒÑÑ Ñƒ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ñ–Ð¹ Ñ‡Ð°ÑÑ‚Ð¸Ð½Ñ– Ð²Ñ–Ñ€ÑˆÐ° ÐÐ½Ð°Ñ‚Ð¾Ð»Ñ–Ñ Ð¢Ð°Ñ€Ð°Ð½Ð° \"Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾\":" << endl;
-        output <<  "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾,\nÐ’ÑÑ–Ð¼, Ñ…Ñ‚Ð¾ Ð¿ÐµÑ€ÐµÑÑ‚ÑƒÐ¿Ð¸Ñ‚ÑŒ Ð’Ð°Ñˆ Ð¿Ð¾Ñ€Ñ–Ð³:\nÐ”Ð¾Ð±Ñ€Ð¸Ð¼ Ð»ÑŽÐ´ÑÐ¼, Ñ– Ð¿Ñ‚Ð°Ñ…Ð°Ð¼ Ñ‚Ð°Ðº ÑÐ°Ð¼Ð¾,\nÐ† ÐºÐ¾Ñ‚Ð¾Ð²Ñ–, Ñ‰Ð¾ Ð² Ñ‚ÐµÐ¿Ð»Ñ– Ð¿Ñ€Ð¸Ð»Ñ–Ð³;\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¶Ð½ÐµÐ½ÑŒÐºÑ–Ð¹ Ð´ÐµÑ€ÐµÐ²Ð¸Ð½Ñ–,\nÐ©Ð¾ Ð´Ð¾ Ñ…Ð°Ñ‚Ð¸ Ð²Ñ–Ñ‚Ð¸ Ð¿Ñ€Ð¸Ñ‚ÑƒÐ»Ñ,\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°Ð»ÐµÑÐµÐ½ÑŒÐºÑ–Ð¹ Ñ‚Ñ€Ð°Ð²Ð¸Ð½Ñ–\nÐ™ Ð²Ñ–Ñ‚ÐµÑ€Ñ†ÑŽ, Ñ‰Ð¾ Ð¿Ñ€Ð¸Ð»Ñ–Ñ‚Ð° Ð·Ð´Ð°Ð»Ñ." << endl;
+        output <<  "\nÑëîâî ÍÅ ì³ñòèòüñÿ ó íàñòóïí³é ÷àñòèí³ â³ðøà Àíàòîë³ÿ Òàðàíà \"Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî\":" << endl;
+        output <<  "Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî,\nÂñ³ì, õòî ïåðåñòóïèòü Âàø ïîð³ã:\nÄîáðèì ëþäÿì, ³ ïòàõàì òàê ñàìî,\n² êîòîâ³, ùî â òåïë³ ïðèë³ã;\nÕàé ùàñòèòü êîæíåíüê³é äåðåâèí³,\nÙî äî õàòè â³òè ïðèòóëÿ,\nÕàé ùàñòèòü ìàëåñåíüê³é òðàâèí³\nÉ â³òåðöþ, ùî ïðèë³òà çäàëÿ." << endl;
     }
     output.close();
     return 0;
@@ -207,10 +207,10 @@ int add_poem_with_time(string file_input)
     ofstream input(file_input, ios::app);
     if (!input)
 	{
-		cerr << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°, Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸Ð¹ Ð´Ð»Ñ Ð¿Ð¸ÑÑŒÐ¼Ð°!" << endl;
+		cerr << "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ïèñüìà!" << endl;
 		exit(1);
 	}
-	input << "Ð¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ñƒ Ð’Ð°ÑˆÑ–Ð¹ Ñ…Ð°Ñ‚Ñ–, Ð¼Ð°Ð¼Ð¾,\nÐ’ÑÑ–Ð¼, Ñ…Ñ‚Ð¾ Ð¿ÐµÑ€ÐµÑÑ‚ÑƒÐ¿Ð¸Ñ‚ÑŒ Ð’Ð°Ñˆ Ð¿Ð¾Ñ€Ñ–Ð³:\nÐ”Ð¾Ð±Ñ€Ð¸Ð¼ Ð»ÑŽÐ´ÑÐ¼, Ñ– Ð¿Ñ‚Ð°Ñ…Ð°Ð¼ Ñ‚Ð°Ðº ÑÐ°Ð¼Ð¾,\nÐ† ÐºÐ¾Ñ‚Ð¾Ð²Ñ–, Ñ‰Ð¾ Ð² Ñ‚ÐµÐ¿Ð»Ñ– Ð¿Ñ€Ð¸Ð»Ñ–Ð³;\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¶Ð½ÐµÐ½ÑŒÐºÑ–Ð¹ Ð´ÐµÑ€ÐµÐ²Ð¸Ð½Ñ–,\nÐ©Ð¾ Ð´Ð¾ Ñ…Ð°Ñ‚Ð¸ Ð²Ñ–Ñ‚Ð¸ Ð¿Ñ€Ð¸Ñ‚ÑƒÐ»Ñ,\nÐ¥Ð°Ð¹ Ñ‰Ð°ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°Ð»ÐµÑÐµÐ½ÑŒÐºÑ–Ð¹ Ñ‚Ñ€Ð°Ð²Ð¸Ð½Ñ–\nÐ™ Ð²Ñ–Ñ‚ÐµÑ€Ñ†ÑŽ, Ñ‰Ð¾ Ð¿Ñ€Ð¸Ð»Ñ–Ñ‚Ð° Ð·Ð´Ð°Ð»Ñ.\n Ð’Ð¸ Ð·Ð°Ð²Ð¶Ð´Ð¸ Ð·Ð° Ð²ÑÑ–Ñ… Ð±ÑƒÐ»Ð¸ Ð´Ð±Ð°Ð¹Ð»Ð¸Ð²Ñ– -\nÐ‘Ð¾ Ñ‚Ð°ÐºÐ° Ð¶ Ñ‚Ð° Ð´Ð¾Ð»Ñ Ñƒ Ð²Ð´Ð¾Ð²Ð¸.\nÐ‘Ð¾ Ð¶ ÑÐº Ð±ÑƒÐ´ÑƒÑ‚ÑŒ Ð²ÑÑ– Ð½Ð°Ð²ÐºÑ€ÑƒÐ³ Ñ‰Ð°ÑÐ»Ð¸Ð²Ñ–,\nÐ¢Ð¾ Ñ‰Ð°ÑÐ»Ð¸Ð²Ñ– Ð±ÑƒÐ´ÐµÑ‚Ðµ Ñ– Ð’Ð¸." << endl;
+	input << "Õàé ùàñòèòü ó Âàø³é õàò³, ìàìî,\nÂñ³ì, õòî ïåðåñòóïèòü Âàø ïîð³ã:\nÄîáðèì ëþäÿì, ³ ïòàõàì òàê ñàìî,\n² êîòîâ³, ùî â òåïë³ ïðèë³ã;\nÕàé ùàñòèòü êîæíåíüê³é äåðåâèí³,\nÙî äî õàòè â³òè ïðèòóëÿ,\nÕàé ùàñòèòü ìàëåñåíüê³é òðàâèí³\nÉ â³òåðöþ, ùî ïðèë³òà çäàëÿ.\n Âè çàâæäè çà âñ³õ áóëè äáàéëèâ³ -\nÁî òàêà æ òà äîëÿ ó âäîâè.\nÁî æ ÿê áóäóòü âñ³ íàâêðóã ùàñëèâ³,\nÒî ùàñëèâ³ áóäåòå ³ Âè." << endl;
     time_t now = time(NULL);
     char date_time[100];
     strftime(date_time, 100, "%Y-%m-%d %H:%M:%S", localtime(&now));
@@ -224,7 +224,7 @@ int add_calculation_and_bits(float x, float y, int b, string file_output)
     ofstream output(file_output, ios::app);
     if (!output)
 	{
-		cerr << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°, Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸Ð¹ Ð´Ð»Ñ Ð¿Ð¸ÑÑŒÐ¼Ð°!" << endl;
+		cerr << "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ïèñüìà!" << endl;
 		exit(1);
 	}
 	output << s_calculation(x, y) << endl;
@@ -232,5 +232,87 @@ int add_calculation_and_bits(float x, float y, int b, string file_output)
 	output << bit_b << endl;
 	output.close();
     return 0;
+}
+
+string read(string path)
+{
+    ifstream file(path);
+    if (!file)
+	{
+		return "Ïîìèëêà, ôàéë íå ìîæå áóòè â³äêðèòèé äëÿ ÷èòàííÿ!";
+	}
+    string text;
+    string line;
+    while (getline(file, line))
+    {
+        text += line + '\n';
+    }
+    file.close();
+    return text;
+}
+
+vector<string> test_results(string exp_result_1, string exp_result_2, string exp_result_3)
+{
+
+    vector<string> Test_results;
+    string expected_result_1 = read(exp_result_1);
+    string expected_result_2 = read(exp_result_2);
+    string expected_result_3 = read(exp_result_3);
+    Test_results.push_back(expected_result_1);
+    Test_results.push_back(expected_result_2);
+    Test_results.push_back(expected_result_3);
+    return Test_results;
+}
+
+vector<string> test_results_10_1(string exp_result_1, string exp_result_2, string exp_result_3, string exp_result_4, string exp_result_5)
+{
+
+    vector<string> Test_results;
+    string expected_result_1 = read(exp_result_1);
+    string expected_result_2 = read(exp_result_2);
+    string expected_result_3 = read(exp_result_3);
+    string expected_result_4 = read(exp_result_4);
+    string expected_result_5 = read(exp_result_5);
+    Test_results.push_back(expected_result_1);
+    Test_results.push_back(expected_result_2);
+    Test_results.push_back(expected_result_3);
+    Test_results.push_back(expected_result_4);
+    Test_results.push_back(expected_result_5);
+    return Test_results;
+}
+
+vector<string> input_10_1(string exp_result_1, string exp_result_2, string exp_result_3, string exp_result_4)
+{
+    vector<string> Test_results;
+    string expected_result_1 = read(exp_result_1);
+    string expected_result_2 = read(exp_result_2);
+    string expected_result_3 = read(exp_result_3);
+    string expected_result_4 = read(exp_result_4);
+    Test_results.push_back(expected_result_1);
+    Test_results.push_back(expected_result_2);
+    Test_results.push_back(expected_result_3);
+    Test_results.push_back(expected_result_4);
+    return Test_results;
+}
+
+vector<string> test_results_10_2(string exp_result_1, string exp_result_2, string exp_result_3)
+{
+    time_t now = time(NULL);
+    char date_time[100];
+    strftime(date_time, 100, "%Y-%m-%d %H:%M:%S", localtime(&now));
+    vector<string> Test_results;
+    string expected_result_1 = read(exp_result_1);
+    expected_result_1 += date_time;
+    expected_result_1 += '\n';
+    string expected_result_2 = read(exp_result_2);
+    expected_result_2 += date_time;
+    expected_result_2 += '\n';
+    string expected_result_3 = read(exp_result_3);
+    expected_result_3 += date_time;
+    expected_result_3 += '\n';
+    Test_results.push_back(expected_result_1);
+    Test_results.push_back(expected_result_2);
+    Test_results.push_back(expected_result_3);
+    return Test_results;
 }
 
