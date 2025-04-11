@@ -1,0 +1,15 @@
+For task 10_1
+Test case 1 PASSED
+Test case 2 PASSED
+Test case 3 PASSED
+Test case 4 PASSED
+
+For task 10_2
+Test case 1 PASSED
+Test case 2 PASSED
+Test case 3 PASSED
+
+For task 10_3
+Test case 1 PASSED
+Test case 2 PASSED
+Test case 3 PASSED
