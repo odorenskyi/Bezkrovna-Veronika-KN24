@@ -3,7 +3,7 @@
 	<cmath>
 	<iostream>
 
-1743701927 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab08\prj\modulesbezkrovna\main.cpp
+1744342008 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab08\prj\modulesbezkrovna\main.cpp
 	<cmath>
 	<iostream>
 	<iomanip>
@@ -12,4 +12,9 @@
 	<sstream>
 	<locale>
 	<windows.h>
+	<fstream>
+	<vector>
+	<algorithm>
+	<ctime>
+	<cstdlib>
 

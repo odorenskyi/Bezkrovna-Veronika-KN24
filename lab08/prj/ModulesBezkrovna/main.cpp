@@ -6,6 +6,11 @@
 #include <sstream>
 #include <locale>
 #include <windows.h>
+#include <fstream>
+#include <vector>
+#include <algorithm>
+#include <ctime>
+#include <cstdlib>
 #define _USE_MATH_DEFINES
 
 using namespace std;
@@ -82,5 +87,150 @@ int bits_analysis(int N)
     bitset<32> bit_N(N);
     int check = bit_N[12] == 0 ? 32 - bit_N.count() : bit_N.count();
     return check;
+}
+
+bool is_word(string text)
+{
+    for (char c : text)
+    {
+        if (!isalpha(c))
+        {
+            return false;
+        }
+    }
+    return !text.empty();
+}
+
+int input_analysis(string file_input, string file_output)
+{
+    setlocale (LC_CTYPE, "ukr");
+    ofstream output(file_output);
+    if (!output)
+	{
+		cerr << "Помилка, файл не може бути відкритий для письма!" << endl;
+		exit(1);
+	}
+    ifstream input(file_input);
+    if (!input)
+	{
+		cerr << "Помилка, файл не може бути відкритий для читання!" << endl;
+		exit(1);
+	}
+    output << "Безкровна Вероніка" << endl;
+    output << "ЦНТУ" << endl;
+    output << "Кропивницький" << endl;
+    output << "Україна" << endl;
+    output << "2025 рік" << endl;
+    string text;
+    string poem = "Хай щастить у Вашій хаті, мамо, "
+                  "Всім, хто переступить Ваш поріг: "
+                  "Добрим людям, і птахам так само, "
+                  "І котові, що в теплі приліг; "
+                  "Хай щастить кожненькій деревині, "
+                  "Що до хати віти притуля, "
+                  "Хай щастить малесенькій травині "
+                  "Й вітерцю, що приліта здаля. ";
+    vector<string> words;
+    string word;
+    bool found = false;
+    for (char c : poem)
+    {
+        if (isalpha(c))
+        {
+            word += c;
+        }
+        else
+        {
+            if (!word.empty())
+            {
+                words.push_back(word);
+                word.clear();
+            }
+        }
+    }
+    if (!word.empty())
+    {
+        words.push_back(word);
+    }
+    input >> text;
+    input.close();
+    if (text.length() == 1 && ispunct(text[0]))
+    {
+        output << "\nУ файлі знак пунктуації" << endl;
+        output.close();
+        ofstream input(file_input, ios::trunc);
+        if (!input)
+        {
+            cerr << "Помилка, файл не може бути відкритий для письма!" << endl;
+            exit(1);
+        }
+        input << "Хай щастить!" << endl;
+        input.close();
+        return 0;
+    }
+    else if (is_word(text))
+    {
+        output <<  "\nКількість літер у слові: " << text.length()<< endl;
+    }
+    else
+    {
+        output <<  "\nЛеонід Каденюк" << endl;
+        output.close();
+        return 0;
+    }
+    transform(text.begin(), text.end(), text.begin(), ::tolower);
+    for (int i = 0; i < words.size(); ++i)
+    {
+        transform(words[i].begin(), words[i].end(), words[i].begin(), ::tolower);
+        if (words[i] == text)
+        {
+            found = true;
+            break;
+        }
+    }
+    if (found)
+    {
+        output <<  "\nСлово міститься у наступній частині вірша Анатолія Тарана \"Хай щастить у Вашій хаті, мамо\":" << endl;
+        output <<  "Хай щастить у Вашій хаті, мамо,\nВсім, хто переступить Ваш поріг:\nДобрим людям, і птахам так само,\nІ котові, що в теплі приліг;\nХай щастить кожненькій деревині,\nЩо до хати віти притуля,\nХай щастить малесенькій травині\nЙ вітерцю, що приліта здаля." << endl;
+    }
+    else
+    {
+        output <<  "\nСлово НЕ міститься у наступній частині вірша Анатолія Тарана \"Хай щастить у Вашій хаті, мамо\":" << endl;
+        output <<  "Хай щастить у Вашій хаті, мамо,\nВсім, хто переступить Ваш поріг:\nДобрим людям, і птахам так само,\nІ котові, що в теплі приліг;\nХай щастить кожненькій деревині,\nЩо до хати віти притуля,\nХай щастить малесенькій травині\nЙ вітерцю, що приліта здаля." << endl;
+    }
+    output.close();
+    return 0;
+}
+
+int add_poem_with_time(string file_input)
+{
+    ofstream input(file_input, ios::app);
+    if (!input)
+	{
+		cerr << "Помилка, файл не може бути відкритий для письма!" << endl;
+		exit(1);
+	}
+	input << "Хай щастить у Вашій хаті, мамо,\nВсім, хто переступить Ваш поріг:\nДобрим людям, і птахам так само,\nІ котові, що в теплі приліг;\nХай щастить кожненькій деревині,\nЩо до хати віти притуля,\nХай щастить малесенькій травині\nЙ вітерцю, що приліта здаля.\n Ви завжди за всіх були дбайливі -\nБо така ж та доля у вдови.\nБо ж як будуть всі навкруг щасливі,\nТо щасливі будете і Ви." << endl;
+    time_t now = time(NULL);
+    char date_time[100];
+    strftime(date_time, 100, "%Y-%m-%d %H:%M:%S", localtime(&now));
+    input << date_time << endl;
+    input.close();
+    return 0;
+}
+
+int add_calculation_and_bits(float x, float y, int b, string file_output)
+{
+    ofstream output(file_output, ios::app);
+    if (!output)
+	{
+		cerr << "Помилка, файл не може бути відкритий для письма!" << endl;
+		exit(1);
+	}
+	output << s_calculation(x, y) << endl;
+	bitset<32> bit_b(b);
+	output << bit_b << endl;
+	output.close();
+    return 0;
 }
 
