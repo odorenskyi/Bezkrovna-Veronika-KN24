@@ -1,1 +1,5 @@
 *.layout
+lab10/
+lab9/
+lab10/prj/TestDriver/TestDriver.cbp
+lab10/prj/TestDriver/TestDriver.depend
