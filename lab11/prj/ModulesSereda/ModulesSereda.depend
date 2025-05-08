@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1746636303 source:c:\users\seredabmtp\desktop\bmtp_11\prj\modulessereda\main.cpp
+	"ModulesSereda.h"
+	"struct_type_project_1.h"
+	<iostream>
+	<fstream>
+
+1746629051 c:\users\seredabmtp\desktop\bmtp_11\prj\modulessereda\struct_type_project_1.h
+	<string>
+
+1746635961 c:\users\seredabmtp\desktop\bmtp_11\prj\modulessereda\modulessereda.h
+	<string>
+	"struct_type_project_1.h"
+
+1746730724 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulessereda\main.cpp
+	"ModulesSereda.h"
+	"struct_type_project_1.h"
+	<iostream>
+	<fstream>
+
+1746728524 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulessereda\modulessereda.h
+	<string>
+	"struct_type_project_1.h"
+
+1746728524 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulessereda\struct_type_project_1.h
+	<string>
+

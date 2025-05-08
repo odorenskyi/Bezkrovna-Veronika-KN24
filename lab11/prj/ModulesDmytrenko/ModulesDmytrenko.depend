@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1746564857 source:c:\users\dmytr\desktop\lab11\prj\modulesdmytrenko\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<locale>
+	<windows.h>
+	"struct_type_project_1.h"
+
+1746562035 c:\users\dmytr\desktop\lab11\prj\modulesdmytrenko\struct_type_project_1.h
+	<string>
+

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1746733120 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\prj_1_bezkrovna\main.cpp
+	<iostream>
+	<locale>
+	<string>
+	<fstream>
+	<windows.h>
+	"ModulesBezkrovna.h"
+	"ModulesDmytrenko.h"
+	"ModulesSereda.h"
+
+1746727969 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulesbezkrovna\modulesbezkrovna.h
+	<string>
+	"struct_type_project_1.h"
+
+1746727793 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulesdmytrenko\struct_type_project_1.h
+	<string>
+
+1746727793 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulesdmytrenko\modulesdmytrenko.h
+	"struct_type_project_1.h"
+
+1746728524 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulessereda\modulessereda.h
+	<string>
+	"struct_type_project_1.h"
+
+1746728524 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab11\prj\modulessereda\struct_type_project_1.h
+	<string>
+
