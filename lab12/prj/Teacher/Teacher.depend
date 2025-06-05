@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1749099894 source:c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab12\prj\teacher\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"ModulesBezkrovna.h"
+
+1749100254 c:\users\Ніка\documents\бмтп 2 сем\Лабораторні роботи\bezkrovna-veronika-kn24\lab08\prj\modulesbezkrovna.h
+	<string>
+	<vector>
+	<iostream>
+	<cmath>
+	<stdexcept>
+

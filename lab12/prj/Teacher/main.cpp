@@ -42,7 +42,7 @@ int main()
     {
         return 1;
     }
-    ifstream input("C:\\Users\\Ніка\\Documents\\бмтп 2 сем\\Лабораторні роботи\\Bezkrovna-Veronika-KN24\\lab12\\TestSuite");
+    ifstream input("C:\\Users\\Ніка\\Documents\\бмтп 2 сем\\Лабораторні роботи\\Bezkrovna-Veronika-KN24\\lab12\\TestSuite\\TestCase.txt");
     ofstream output("TestResults.txt");
     if (!input || !output)
 	{

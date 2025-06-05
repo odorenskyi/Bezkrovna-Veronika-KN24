@@ -3,8 +3,10 @@
 
 using namespace std;
 #include <string>
+#include <vector>
 #include <iostream>
 #include <cmath>
+#include <stdexcept>
 #define _USE_MATH_DEFINES
 
 float s_calculation (float x, float y);
@@ -40,17 +42,18 @@ class ClassLab12_Bezkrovna
         double radius;
         string color;
     public:
+        ClassLab12_Bezkrovna();
         ClassLab12_Bezkrovna (double height, double radius, string color);
-        double GetHeight();
-        double GetRadius();
-        string GetColor();
+        double GetHeight() const;
+        double GetRadius() const;
+        string GetColor() const;
         void SetHeight(double input_height);
         void SetRadius(double input_radius);
         void SetColor(string input_color);
         double CountVolume();
 };
 
-ClassLab12_Bezkrovna() : height(1.0), radius(1.0), color("yellow") {}
+ClassLab12_Bezkrovna::ClassLab12_Bezkrovna() : height(1.0), radius(1.0), color("yellow") {}
 
 ClassLab12_Bezkrovna::ClassLab12_Bezkrovna (double input_height, double input_radius, string input_color)
 {
@@ -68,24 +71,15 @@ ClassLab12_Bezkrovna::ClassLab12_Bezkrovna (double input_height, double input_ra
     color = input_color;
 }
 
-    ClassLab12_Bezkrovna(double input_height, double input_radius, string input_color)
-    {
-
-
-        height = input_height;
-        radius = input_radius;
-        color = input_color;
-    }
-
 double ClassLab12_Bezkrovna::GetHeight() const {return height;}
 double ClassLab12_Bezkrovna::GetRadius() const {return radius;}
-string ClassLab12_Bezkrovna::GetColor()const {return color;}
+string ClassLab12_Bezkrovna::GetColor() const {return color;}
 
 void ClassLab12_Bezkrovna::SetHeight(double input_height)
 {
     if (input_height <= 0)
     {
-        printf("Помилка!");
+        cerr << "Помилка!" << endl;
         return;
     }
     height = input_height;
@@ -95,7 +89,7 @@ void ClassLab12_Bezkrovna::SetRadius(double input_radius)
 {
     if (input_radius <= 0)
     {
-        printf("Помилка!");
+        cerr << "Помилка!" << endl;
         return;
     }
     radius = input_radius;
